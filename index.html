@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="resume-builder">
+        <h1>Resume Builder</h1>
+        <form id="resume-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+            
+            <label for="education">Education:</label>
+            <textarea id="education" name="education" required></textarea>
+            
+            <label for="experience">Work Experience:</label>
+            <textarea id="experience" name="experience"></textarea>
+            
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="e.g., JavaScript, CSS">
+
+             
+            <label for="projects">Projects:</label>
+            <input type="text" id="projects" name="projects" placeholder="e.g., e commerce web.,">
+
+
+            
+            <label for="hobbies">Hobbies:</label>
+            <textarea id="hobbies" name="hobbies" required></textarea>
+
+            
+            <label for="activities">Other Activities:</label>
+            <textarea id="activities" name="activities" required></textarea>
+            
+            
+            <button type="button" onclick="generateResume()">Generate Resume</button>
+        </form>
+        
+        <div id="resume-output" class="resume-output">
+            <!-- Resume preview will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
